@@ -1,0 +1,23 @@
+@import 'bootstrap';
+
+// body {
+//     display: flex;
+//     flex-direction: column;
+// }
+
+.carousel-inner {
+    height: 320px;
+}
+
+.carousel-container {
+    max-height: 320px;
+    height: 320px;
+}
+
+.carousel-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 320px;
+}
