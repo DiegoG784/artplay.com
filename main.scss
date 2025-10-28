@@ -37,3 +37,32 @@
 .section-image {
     width: 100%;
 }
+
+.differential-section {
+    background-color: rgb(13, 3, 58);
+    color:white;
+}
+
+.white-note {
+    background-color: rgb(192, 192, 192);
+    height: 128px;
+}
+
+.black-note {
+    background-color: rgb(32, 32, 32);
+    height: 80px;
+    color:white;
+}
+
+.white-middle-note {
+    background-color: rgb(192, 192, 192);
+    height: 70px;
+}
+
+.white-note-normal {
+    background-color: rgb(192, 192, 192);
+}
+
+.black-note-normal {
+    background-color: rgb(32, 32, 32);
+}
