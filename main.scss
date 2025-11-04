@@ -75,4 +75,12 @@
 .maps-reviewers {
     background-color:cadetblue;
 }
+
+.ribbon {
+    background-image: url('ribbon_placeholder.svg');
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+    // z-index: -1;
+}
 /*                       */
