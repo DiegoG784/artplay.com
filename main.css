@@ -1,9 +1,31 @@
-@import 'bootstrap';
-
-// body {
+/* // body {
 //     display: flex;
 //     flex-direction: column;
-// }
+// } */
+
+.ribbon {
+    background-image: url('ribbon_placeholder.svg');
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+    /* // z-index: -1; */
+}
+
+.bg-main-color-1 {
+    background-color: #00021d;
+}
+
+.bg-main-color-2 {
+    background-color: #f0f0f0;
+}
+
+.bg-main-color-3 {
+    background-color: #1291e6;
+}
+
+.color-white {
+    color: #f0f0f0;
+}
 
 .carousel-inner {
     height: 320px;
@@ -22,11 +44,10 @@
     height: 320px;
 }
 
-.nav-footer {
-    background-color: aqua;
-    // height: 100px;
+/* .nav-footer { */
+    /* // height: 100px; */
 
-}
+/* } */
 
 .footer-divider {
     background-color: black;
@@ -39,18 +60,27 @@
 }
 
 .differential-section {
-    background-color: rgb(13, 3, 58);
     color:white;
 }
 
+
+/* Cursos */
+
 .white-note {
     background-color: rgb(192, 192, 192);
-    height: 128px;
+    min-height: 128px;
+}
+
+.white-note-side {
+    background-color: rgb(192, 192, 192);
+    min-height: 86px;
+    display: flex;
+    align-items: center;
 }
 
 .black-note {
     background-color: rgb(32, 32, 32);
-    height: 80px;
+    min-height: 80px;
     color:white;
 }
 
@@ -67,6 +97,10 @@
     background-color: rgb(32, 32, 32);
 }
 
+
+/*        */
+
+
 /* Página de depoimentos */
 .reviewer-card {
     width: 240px;
@@ -76,11 +110,9 @@
     background-color:cadetblue;
 }
 
-.ribbon {
-    background-image: url('ribbon_placeholder.svg');
-    position: absolute;
-    background-repeat: no-repeat;
-    top: 0;
-    // z-index: -1;
+.note-divider-line {
+    background-color:rgb(105, 105, 105);
+    height: 10px;
+    width: 100%;
 }
 /*                       */
