@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.scss">
+        <link rel="stylesheet" href="main.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <title>Artplay</title>
     </head>
@@ -19,32 +19,32 @@
 
 
     <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-main-color-1">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img height="48px" width="48px"></a>
+                <a class="navbar-brand" href="index.html"><img src="logo_small.jpg" height="48px" width="48px"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a id="active-page-link" class="nav-link active-page" aria-current="page" href="/">Home</a>
+                            <a id="active-page-link" class="nav-link active-page text-light" aria-current="page" href="index.html">Home</a>
                             <div class="ribbon"></div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="cursos.html">Cursos</a>
+                            <a class="nav-link text-light" href="cursos.html">Cursos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="professores.html">Professores</a>
+                            <a class="nav-link text-light" href="professores.html">Professores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="depoimentos.html">Depoimentos</a>
+                            <a class="nav-link text-light" href="depoimentos.html">Depoimentos</a>
                         </li>
 
                     </ul>
                     <ul class="navbar-nav d-flex w-100 flex-row-reverse">
                         <li class="nav-item d-flex">
-                            <a class="nav-link" href="contato.html">Contato</a>
+                            <a class="nav-link text-light" href="contato.html">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -77,10 +77,16 @@
                     <div class="row w-100 justify-content-center">
                         <div class="col">
                             <p class="my-2">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos temporibus, vero blanditiis ipsam hic cumque qui 
-                                aliquid asperiores quaerat? Aliquam ab cupiditate, atque earum veniam ipsum nostrum dolore laudantium. Lorem ipsum dolor sit 
-                                amet, consectetur adipisicing elit. Quos ratione aliquid molestias eos incidunt, reiciendis officia libero voluptatum natus 
-                                non earum delectus. Nam provident mollitia incidunt qui eligendi rerum deleniti!
+                                No nosso espaço, acreditamos que a música é uma extensão para nossas vidas. Criamos um ambiente acolhedor e 
+                                inspirador onde crianças, jovens e adultos podem explorar sua criatividade, desenvolver habilidades e se conectar com 
+                                a arte musical de forma profunda.
+                                Oferecemos uma diversidade de cursos desde instrumentos, canto, teoria musical, composição, produção e muito mais, 
+                                sempre focado na individualidade de cada aluno. Mesmo que seja um iniciante curioso ou um artista em busca de aperfeiçoamento, 
+                                aqui você encontrará apoio, técnica e liberdade para crescer.
+                                Nossa comunidade é feita por pessoas apaixonadas pela música que compartilham experiências, aprendem juntas e celebram cada 
+                                conquista.
+                                <br><br>
+                                Venha experienciar o mundo da música com a gente, o palco está pronto para você!
                             </p>
                         </div>
                         <div class="col-sm-4">
@@ -97,11 +103,12 @@
                     <div class="row w-100 justify-content-center">
                         <div class="col">
                             <p class="my-2">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos temporibus, vero blanditiis ipsam hic cumque qui 
-                                aliquid asperiores quaerat? Aliquam ab cupiditate, atque earum veniam ipsum nostrum dolore laudantium. Lorem ipsum dolor sit 
-                                amet, consectetur adipisicing elit. Quos ratione aliquid molestias eos incidunt, reiciendis officia libero voluptatum natus 
-                                non earum delectus. Nam provident mollitia incidunt qui eligendi rerum deleniti!
+                                Nós oferecemos diversos instrumentos para diversos tipos de gostos, desde instrumentos de corda e até em canto profissional. Venha dar uma olhada!
                             </p>
+                            <div class="w-100 d-flex justify-content-center">
+                                <a type="button" class="btn btn-primary me-4" href="cursos.html">Explorar Cursos</a>
+                                <a type="button" class="btn btn-primary" href="cursos.html#experimental-course">Aula Experimental</a>
+                            </div>
                         </div>
                         <div class="col-sm-4">
                             <img class="section-image" src="img_placeholder.jpg">
@@ -112,13 +119,13 @@
         </div>
 
         <!-- Seção de destaque de diferencial da escola -->
-        <div class="differential-section w-100 p-1">
+        <div class="differential-section w-100 p-1 bg-main-color-1">
             <div class="main-content mx-5">
                 <h2 class="mt-3">Nossas aulas são mais do que treinos individuais</h2>
                 <p class="mb-4">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aspernatur illum, 
-                    deleniti soluta pariatur atque reiciendis repellat deserunt sapiente dolore repudiandae corrupti 
-                    ducimus cupiditate illo adipisci id! Veniam, consequuntur? Asperiores?
+                    As vezes, nós precisamos ensaiar e praticar nossa música em grupos para um show musical e é raro encontrar uma escola que oferece este tipo de treino, exceto por aqui.
+                    Nós juntamos e capacitamos nossos alunos com aulas cativantes e desafiantes para estimular a capacidade de poder tocar músicas que necessitam de uma banda 
+                    formada, saindo em vantagem como muitos profissionais e escolas ao redor!
                 </p>
                 <div class="section my-3">
                     <h3>Aulas em Grupo</h3>
@@ -126,10 +133,8 @@
                         <div class="row w-100 justify-content-center">
                             <div class="col">
                                 <p class="my-2">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos temporibus, vero blanditiis ipsam hic cumque qui 
-                                    aliquid asperiores quaerat? Aliquam ab cupiditate, atque earum veniam ipsum nostrum dolore laudantium. Lorem ipsum dolor sit 
-                                    amet, consectetur adipisicing elit. Quos ratione aliquid molestias eos incidunt, reiciendis officia libero voluptatum natus 
-                                    non earum delectus. Nam provident mollitia incidunt qui eligendi rerum deleniti!
+                                    As aulas em grupo são realizada em grupos de alunos com os instrutores que irão determinar a aula que será passada. Os alunos praticam juntos, compartilham experiências e evoluem musicalmente
+                                    com apoio dos instrutores. Ideal para desenvolver ritmo, percepção e improvisação!
                                 </p>
                             </div>
                             <div class="col-sm-4">
@@ -145,10 +150,9 @@
                         <div class="row w-100 justify-content-center">
                             <div class="col">
                                 <p class="my-2">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos temporibus, vero blanditiis ipsam hic cumque qui 
-                                    aliquid asperiores quaerat? Aliquam ab cupiditate, atque earum veniam ipsum nostrum dolore laudantium. Lorem ipsum dolor sit 
-                                    amet, consectetur adipisicing elit. Quos ratione aliquid molestias eos incidunt, reiciendis officia libero voluptatum natus 
-                                    non earum delectus. Nam provident mollitia incidunt qui eligendi rerum deleniti!
+                                    A prática de banda é uma das experiências mais empolgantes em nossa escola! Os alunos formam grupos 
+                                    e ensaiam diversos repertórios musicais, como se estivessem em uma banda de verdade. É onde teoria vira prática, 
+                                    e a música ganhará vida ao palco!
                                 </p>
                             </div>
                             <div class="col-sm-4">
@@ -189,7 +193,7 @@
 
         <!-- Rodapé -->
         <div>
-            <footer class="nav-footer bg-body-tertiary p-3">
+            <footer class="nav-footer bg-main-color-1 text-light p-3">
                 <div class="container">
                     <h4>Artplay</h4>
                     <!--Por algum motivo, esta seção está dando conflitos com o css de flex ou de lista-->
@@ -211,10 +215,10 @@
                         </ul>
                     </div> -->
                     <div class="footer-social-media">
-                        <a href="#"><img height="48px" width="48px"></a>
-                        <a href="#"><img height="48px" width="48px"></a>
-                        <a href="#"><img height="48px" width="48px"></a>
-                        <a href="#"><img height="48px" width="48px"></a>
+                        <a href="#"><img height="32px" width="32px"></a>
+                        <a href="#"><img height="32px" width="32px"></a>
+                        <a href="#"><img height="32px" width="32px"></a>
+                        <a href="#"><img height="32px" width="32px"></a>
                     </div>
                     <div class="d-flex justify-content-center py-3">
                         <div class="footer-divider justify-content-center"></div>
