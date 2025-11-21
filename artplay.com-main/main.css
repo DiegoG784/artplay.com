@@ -1,0 +1,240 @@
+/* // body {
+//     display: flex;
+//     flex-direction: column;
+// } */
+
+.ribbon {
+    background-image: url('ribbon_placeholder.svg');
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+    /* // z-index: -1; */
+}
+
+.main-content p {
+    margin-top: 20px;
+}
+
+.bg-main-color-1 {
+    background-color: #00021d;
+}
+
+.bg-main-color-2 {
+    background-color: #f0f0f0;
+}
+
+.bg-main-color-3 {
+    background-color: #1291e6;
+}
+
+.color-white {
+    color: #f0f0f0;
+}
+
+.carousel-inner {
+    height: 320px;
+}
+
+.carousel-container {
+    max-height: 320px;
+    height: 320px;
+}
+
+.carousel-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 320px;
+}
+
+/* .nav-footer { */
+    /* // height: 100px; */
+
+/* } */
+
+.footer-divider {
+    background-color: white;
+    width: 100%;
+    height: 1px;
+}
+
+.section-image {
+    width: 100%;
+}
+
+.differential-section {
+    color:white;
+}
+
+
+/* Cursos */
+
+.white-note {
+    background-color: rgb(255, 255, 255);
+    min-height: 128px;
+}
+
+.white-note-side {
+    background-color: rgb(255, 255, 255);
+    min-height: 86px;
+    display: flex;
+    align-items: center;
+}
+
+.black-note {
+    background-color: rgb(32, 32, 32);
+    min-height: 80px;
+    color:white;
+}
+
+.white-middle-note {
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+}
+
+.white-note-normal {
+    background-color: rgb(255, 255, 255);
+}
+
+.black-note-normal {
+    background-color: rgb(32, 32, 32);
+}
+.cursos-section {
+    background-color: #1291e6; /* preto */
+    color: #ffffff !important;
+    width: 100%;
+    padding: 40px;
+}
+
+
+/*        */
+
+
+/* Página de depoimentos */
+.reviewer-card {
+    width: 240px;
+}
+
+.maps-reviewers {
+    background-color:cadetblue;
+}
+
+.note-divider-line {
+    background-color:rgb(105, 105, 105);
+    height: 10px;
+    width: 100%;
+}
+
+#experimental-course {
+    background-color: #000;
+    color: white; /* para o texto continuar visível */
+    padding: 20px;
+}
+/*  partitura                     */
+
+.partitura-container {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* Clave */
+.clave {
+    width: 220px;
+    position: absolute;
+    left: 0;
+    top: -70px;
+}
+
+/* 5 linhas da pauta */
+.linhas {
+    margin-left: 60px;
+    margin-right: 60px;
+    position: relative;
+    z-index: 1;
+}
+.linha {
+    height: 4px;
+    background: black;
+    margin: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Notas */
+
+.nota {
+    width: 25px;
+    height: 25px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.nota:nth-of-type(1) { left: 120px; top: 10px; }   
+.nota:nth-of-type(2) { left: 260px; top: 35px; }   
+.nota:nth-of-type(3) { left: 400px; top: 60px; }   
+.nota:nth-of-type(4) { left: 540px; top: 85px; }   
+.nota:nth-of-type(5) { left: 680px; top: 110px; } 
+
+
+.partitura {
+    position: relative;
+    width: 100%;
+    height: 200px;     
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+/* Card do professor */
+.card {
+    width: 350px;
+    background: #18a9f4;
+    color: white;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px #0002;
+    position: absolute;
+    right: 40px;
+    top: 100px;
+}
+
+.card.escondido {
+    display: none;
+}
+
+.card img {
+    width: 160px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.partitura-container{
+    margin-top: 30px;
+}
+.h1profs{
+    margin-bottom: 100px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+.main-content {
+    margin-bottom: 120px;
+}
+
+
