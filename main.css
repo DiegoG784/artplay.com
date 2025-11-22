@@ -55,6 +55,10 @@
     height: 1px;
 }
 
+.nav-footer{
+    margin-top: 200px;
+}
+
 .section-image {
     width: 100%;
 }
@@ -111,9 +115,6 @@
 }
 
 
-/*        */
-
-
 /* Página de depoimentos */
 .reviewer-card {
     width: 240px;
@@ -130,64 +131,7 @@
 }
 /*                       */
 
-/*  partitura                     */
 
-.partitura-container {
-    position: relative;
-    width: 100%;
-    margin-top: 40px;
-}
-
-/* Clave */
-.clave {
-    width: 220px;
-    position: absolute;
-    left: 0;
-    top: -70px;
-}
-
-/* 5 linhas da pauta */
-.linhas {
-    margin-left: 60px;
-    margin-right: 60px;
-    position: relative;
-    z-index: 1;
-}
-.linha {
-    height: 4px;
-    background: black;
-    margin: 20px 0;
-    position: relative;
-    z-index: 1;
-}
-
-
-/* Notas */
-
-.nota {
-    width: 25px;
-    height: 25px;
-    background: black;
-    border-radius: 50%;
-    position: absolute;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.nota:nth-of-type(1) { left: 120px; top: 10px; }   
-.nota:nth-of-type(2) { left: 260px; top: 35px; }   
-.nota:nth-of-type(3) { left: 400px; top: 60px; }   
-.nota:nth-of-type(4) { left: 540px; top: 85px; }   
-.nota:nth-of-type(5) { left: 680px; top: 110px; } 
-
-
-.partitura {
-    position: relative;
-    width: 100%;
-    height: 200px;     
-    margin-left: 60px;
-    margin-right: 60px;
-}
 
 /* Card do professor */
 .card {
@@ -216,24 +160,101 @@
     margin-top: 30px;
 }
 .h1profs{
-    margin-bottom: 100px;
-}
-/*                   */
-
-
-/* html, body {
-    height: 100%;
+    margin-bottom: 40px;
 }
 
-body {
-    display: flex;
+.nota:active, .nota.tocado {
+background: #1291e6; 
+transform: scale(1.2);
+transition: background 0.1s, transform 0.1s;
+}
+#professor-card {
+    top: 10;
+    left: 30;
+    width: 350px;
+    height: 50vh;
+    display: flex; 
     flex-direction: column;
-    min-height: 100vh;
+    align-items: center; 
+    text-align: center;
+    box-shadow: 10px 5 0px rgba(0.5, 0, 0, 0);
+    z-index: 1000;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    position: fixed;
 }
 
-main {
-    flex: 1;
+#prof-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
-.main-content {
-    margin-bottom: 120px;
-} */
+.partitura-container {
+    position: relative; 
+    width: 100%;
+    margin-top: 80px; 
+}
+
+
+.pauta-linhas {
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-top: 50px;
+}
+.linha {
+    height: 4px;
+    background: black;
+    margin: 20px 0;
+}
+
+.partitura-notas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50px; 
+    
+    display: flex; 
+    justify-content: flex-start;
+    gap: 120px; 
+    padding-left: 120px;
+    
+    margin-left: 60px;
+    margin-right: 60px;
+    
+    z-index: 20; 
+}
+
+.nota {
+    width: 25px;
+    height: 25px;
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
+    flex-shrink: 0; 
+}
+
+/* AJUSTE VERTICAL DA NOTA */
+.nota:nth-of-type(1) { margin-top: 9px; } 
+.nota:nth-of-type(2) { margin-top: 33px; } 
+.nota:nth-of-type(3) { margin-top: 57px; } 
+.nota:nth-of-type(4) { margin-top: 81px; } 
+.nota:nth-of-type(5) { margin-top: 105px; }
+.nota:nth-of-type(6) {margin-top: 33px; margin-left: 20px;}
+
+
+.clave {
+    width: 220px !important; 
+    height: 220px !important; 
+    max-width: 220px !important; 
+    max-height: 220px !important;
+    position: absolute;
+    z-index: 15;
+    left: 1% !important; 
+    top: -2px !important; 
+}
+
+.card.escondido{
+    display: none !important;
+}
