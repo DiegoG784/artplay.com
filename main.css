@@ -70,13 +70,18 @@
 
 /* Cursos */
 
+.piano-course {
+    border-top: 1px solid rgb(49, 49, 49);
+    border-bottom: 1px solid rgb(49, 49, 49);
+}
+
 .white-note {
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(240, 240, 240);
     min-height: 128px;
 }
 
 .white-note-side {
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(240, 240, 240);
     min-height: 86px;
     display: flex;
     align-items: center;
@@ -89,12 +94,12 @@
 }
 
 .white-middle-note {
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(240, 240, 240);
     height: 70px;
 }
 
 .white-note-normal {
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(240, 240, 240);
 }
 
 .black-note-normal {
@@ -125,7 +130,7 @@
 }
 
 .note-divider-line {
-    background-color:rgb(105, 105, 105);
+    background-color:rgb(24, 24, 24);
     height: 10px;
     width: 100%;
 }
