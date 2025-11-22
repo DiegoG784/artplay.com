@@ -139,17 +139,7 @@
 
 
 /* Card do professor */
-.card {
-    width: 350px;
-    background: #18a9f4;
-    color: white;
-    padding: 30px;
-    border-radius: 30px;
-    box-shadow: 0 0 20px #0002;
-    position: absolute;
-    right: 40px;
-    top: 100px;
-}
+
 
 .card.escondido {
     display: none;
@@ -176,22 +166,30 @@ transition: background 0.1s, transform 0.1s;
 #professor-card {
     top: 10;
     left: 30;
-    width: 350px;
-    height: 50vh;
+    width: 420px;
+    height: 80vh;
     display: flex; 
     flex-direction: column;
     align-items: center; 
-    text-align: center;
+    text-align: justify;
     box-shadow: 10px 5 0px rgba(0.5, 0, 0, 0);
     z-index: 1000;
     padding: 20px;
     transition: all 0.3s ease-in-out;
     position: fixed;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #0002;
+    position: absolute;
+    right: 40px;
+    top: 100px;
 }
-
+.card-body p {
+    align-self: stretch; 
+}
 #prof-img{
-    width: 150px;
-    height: 150px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
@@ -262,4 +260,29 @@ transition: background 0.1s, transform 0.1s;
 
 .card.escondido{
     display: none !important;
+}
+
+.course-card-link:hover {
+    /* Efeito de "levantar" o card */
+    transform: translateY(-5px); 
+    text-decoration: none;
+}
+   .course-card-link {
+    display: block; 
+    text-decoration: none; 
+    color: inherit;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.course-card {
+    height: 100%;
+    width: 100%;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
