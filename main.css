@@ -262,7 +262,8 @@ transition: background 0.1s, transform 0.1s;
 
 .partitura-notas {
     position: absolute;
-    width: 100%;
+    /* width: 100%; */
+    width: fit-content;
     height: 100%;
     top: 50px; 
     
