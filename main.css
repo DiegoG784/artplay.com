@@ -131,6 +131,13 @@
     padding: 20px;
 }
 
+.special-course-section {
+    background-color: #fd7e14;
+}
+
+.special-course-button {
+    color: #793600;
+}
 
 /* Página de depoimentos */
 .reviewer-card {
