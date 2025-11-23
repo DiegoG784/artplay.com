@@ -28,7 +28,7 @@
 }
 
 .carousel-inner {
-    height: 320px;
+    height: 360px;
 }
 
 .carousel-container {
@@ -41,7 +41,16 @@
     position:absolute;
     bottom: 0;
     width: 100%;
-    height: 320px;
+    height: 360px;
+}
+
+.carousel-item img {
+    height: 360px;
+    object-fit:cover;
+}
+
+.carousel {
+    height: 360px;
 }
 
 /* .nav-footer { */
@@ -57,6 +66,9 @@
 
 .nav-footer{
     margin-top: 200px;
+    position:absolute;
+    bottom:auto;
+    width: 100%;
 }
 
 .section-image {
@@ -70,13 +82,18 @@
 
 /* Cursos */
 
+.piano-course {
+    border-top: 1px solid rgb(49, 49, 49);
+    border-bottom: 1px solid rgb(49, 49, 49);
+}
+
 .white-note {
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(240, 240, 240);
     min-height: 128px;
 }
 
 .white-note-side {
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(240, 240, 240);
     min-height: 86px;
     display: flex;
     align-items: center;
@@ -89,12 +106,12 @@
 }
 
 .white-middle-note {
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(240, 240, 240);
     height: 70px;
 }
 
 .white-note-normal {
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(240, 240, 240);
 }
 
 .black-note-normal {
@@ -114,6 +131,13 @@
     padding: 20px;
 }
 
+.special-course-section {
+    background-color: #fd7e14;
+}
+
+.special-course-button {
+    color: #793600;
+}
 
 /* Página de depoimentos */
 .reviewer-card {
@@ -126,7 +150,7 @@
 }
 
 .note-divider-line {
-    background-color:rgb(105, 105, 105);
+    background-color:rgb(24, 24, 24);
     height: 10px;
     width: 100%;
 }
