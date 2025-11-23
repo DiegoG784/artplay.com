@@ -127,7 +127,7 @@
 
 #experimental-course {
     background-color: #000;
-    color: white; /* para o texto continuar visível */
+    color: white; 
     padding: 20px;
 }
 
@@ -178,12 +178,7 @@
     margin-bottom: 40px;
 }
 
-.nota:active, .nota.tocado {
-background: #1291e6; 
-transform: scale(1.2);
-transition: background 0.1s, transform 0.1s;
-}
-#professor-card {
+/* #professor-card {
     top: 10;
     left: 30;
     width: 420px;
@@ -203,7 +198,42 @@ transition: background 0.1s, transform 0.1s;
     position: absolute;
     right: 40px;
     top: 100px;
+} */
+
+#professor-card {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    z-index: 1000;
+    width: 400px;
+    max-height: 80vh;
+    overflow-y: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    text-align: justify;
+    transition: all 0.3s ease-in-out;
 }
+
+@media (max-width: 768px) {
+    #professor-card {
+        width: 90%;
+        max-width: 350px;
+        right: auto;
+        left: 50%;
+        right: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: auto;
+        max-height: 85vh;
+        box-shadow: 0 0 100px rgba(0,0,0,0.8);
+    }
+}
+
 .card-body p {
     align-self: stretch; 
 }
@@ -237,34 +267,85 @@ transition: background 0.1s, transform 0.1s;
     width: 100%;
     height: 100%;
     top: 50px; 
+
     
-    display: flex; 
-    justify-content: flex-start;
-    gap: 120px; 
-    padding-left: 120px;
     
     margin-left: 60px;
     margin-right: 60px;
-    
+    pointer-events: none;
     z-index: 20; 
 }
 
-.nota {
+/* .nota {
     width: 25px;
     height: 25px;
     background: black;
     border-radius: 50%;
     cursor: pointer;
-    flex-shrink: 0; 
+    flex-shrink: 0; } */
+
+.nota {
+    position: absolute; 
+    background-color: transparent;
+    border-radius: 0;
+    width: auto;
+    height: auto; 
+    
+    /* Centralização */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: translate(-50%, -40%); 
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.nota img {
+    width: 40px;
+    height: auto; 
+    transition: transform 0.2s ease;
+    
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));
+}
+
+
+.nota:hover img {
+    transform: scale(1.2);
+    filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.5));
 }
 
 /* AJUSTE VERTICAL DA NOTA */
-.nota:nth-of-type(1) { margin-top: 9px; } 
-.nota:nth-of-type(2) { margin-top: 33px; } 
-.nota:nth-of-type(3) { margin-top: 57px; } 
-.nota:nth-of-type(4) { margin-top: 81px; } 
-.nota:nth-of-type(5) { margin-top: 105px; }
-.nota:nth-of-type(6) {margin-top: 33px; margin-left: 20px;}
+.nota:nth-of-type(1) {
+    left: 15%;
+    top: 14px;
+ } 
+.nota:nth-of-type(2) { 
+    left: 25%;
+    top: 38px;
+} 
+.nota:nth-of-type(3) { 
+    left:35%;
+    top: 65px;
+    
+} 
+.nota:nth-of-type(4) { 
+    left: 45%;
+    top: 92px;
+    
+} 
+.nota:nth-of-type(5) { 
+    left: 55%;
+    top: 110px;
+ }
+.nota:nth-of-type(6) {
+    left: 65%;
+    top: 40px;
+}
+
+.nota img {
+    pointer-events: none;
+}
 
 
 .clave {
@@ -336,7 +417,7 @@ transition: background 0.1s, transform 0.1s;
     position: relative; 
     height: 0; 
     overflow: hidden; 
-    padding-bottom: 75%; /* Proporção padrão (4:3) */
+    padding-bottom: 75%;
     margin-top: 70px;
 }
 .calendar-responsive iframe {
@@ -352,4 +433,29 @@ main.container-fluid {
 }
 .main-content mx-5{
     margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+    
+    .partitura-container {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        position: relative;
+        padding-bottom: 20px;
+    }
+
+    .pauta-linhas {
+        min-width: 700px; 
+        margin-right: 60px; 
+    }
+
+    .partitura-notas {
+        min-width: 700px;
+        left: 0;
+    }
+
+    .clave {
+        left: 10px !important; 
+    }
 }
