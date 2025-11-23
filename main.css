@@ -276,6 +276,7 @@
     position: relative; 
     width: 100%;
     margin-top: 80px; 
+    height: 170px;
 }
 
 
@@ -292,13 +293,9 @@
 
 .partitura-notas {
     position: absolute;
-    /* width: 100%; */
-    width: fit-content;
+    width: 100%;
     height: 100%;
     top: 50px; 
-
-    
-    
     margin-left: 60px;
     margin-right: 60px;
     pointer-events: none;
@@ -319,8 +316,6 @@
     border-radius: 0;
     width: auto;
     height: auto; 
-    
-    /* Centralização */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,6 +323,7 @@
     transform: translate(-50%, -40%); 
     cursor: pointer;
     pointer-events: auto;
+
 }
 
 .nota img {
@@ -344,7 +340,6 @@
     filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.5));
 }
 
-/* AJUSTE VERTICAL DA NOTA */
 .nota:nth-of-type(1) {
     left: 15%;
     top: 14px;
@@ -365,7 +360,7 @@
 } 
 .nota:nth-of-type(5) { 
     left: 55%;
-    top: 110px;
+    top: 65px;
  }
 .nota:nth-of-type(6) {
     left: 65%;
@@ -487,4 +482,14 @@ main.container-fluid {
     .clave {
         left: 10px !important; 
     }
+}
+.carousel-item video {
+    height: 480px;
+    width: 100%;
+    object-fit: contain;
+    background: #000;
+}
+.carousel-wrapper {
+    width: 90%;
+    margin: auto;
 }

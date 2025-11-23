@@ -1,11 +1,11 @@
 console.log("SCRIPT.JS CARREGADO COM SUCESSO!");
 
 const professores = {
-    1: { nome: "Yasmin", img: "prof1.png", desc: "Professora de violino." },
+    1: { nome: "Yasmim Vieira", img: "prof1.png", desc: "Professora de violino." },
     2: { nome: "Felipe Pimentel", img: "prof2.png", desc: "Nascido em Osasco (SP) em 1986, é músico e professor de violão e guitarra. Formado no curso livre de Guitarra do Conservatório Vila Mariana em 2012, também estudou no Conservatório Heitor Villa-Lobos, no IGT (Instituto de Guitarra e Tecnologia) e com diversos professores particulares ao longo de sua trajetória.<br>Leciona violão e guitarra desde 2008, passando por diversas escolas de música em São Paulo. É fundador e professor da Artplay Música, onde atua atualmente, unindo experiência, didática moderna e dedicação à formação de novos músicos." },
-    3: { nome: "Rogério", img: "prof3.png", desc: "Professor de cordas." },
+    3: { nome: "Rogério Andretta", img: "prof3.png", desc: "Professor de cordas." },
     4: { nome: "Matheus Novaes", img: "prof4.png", desc: "Matheus Novaes é pianista, tecladista, produtor e arranjador, com mais de 15 anos de experiência em aulas particulares, workshops, seminários e masterclasses. Também atua como diretor musical, arranjador e produtor de trilhas sonoras, com trabalhos no Bless Studio, Igreja Renascer Moema, Estúdio Belas Artes e na Igreja Evangélica OBPC, onde segue como músico e diretor musical.<br> Ao longo de sua trajetória, colaborou com diversos artistas e bandas dos cenários gospel e secular, incluindo Robson Nascimento, Célia Cipriano (Fat Family), Alexandre (Templo Soul), Sergio Mello (Ebony Voices), Paulo Cremona (Ídolos), Friends & Jazz (ULM), Quarteto Diminueto (Festival de Música Brasileira - Argentina), Fábio Cadore, Oscar Puebla (Universidade de Cuyo - Argentina), Marcelo Aguiar, Julliard Jazz Ensemble (EUA), Clóvis Pinho, Renascer Praise, Maurílio Santos e Bishop S.Y. Younger (Ramp International Church)." },
-    5: { nome: "Leonardo", img: "prof5.png", desc: "Professor de guitarra." },
+    5: { nome: "Felipe", img: "prof5.png", desc: "Professor de guitarra." },
     6: { nome: "Milena Moraes", img: "prof6.png", desc: "Milena Moraes é professora de Técnica Vocal e Teclado/Piano, nascida em São Paulo em1977. Formada em Pedagogia Vocal pela Ensinando Canto – Camila Zaponi, segue ampliando sua formação em Licenciatura em Música pela Uninter e em Teclado pela Jahn Sohein e Instituto Pimentel.<br> Atua como docente na Escola de Música Art Play, Asset - Educar para Transformar, Trio Teachers, além de ministrar aulas particulares. Reconhecida por sua abordagem sensível e técnica, Milena desenvolve um trabalho voltado ao aprendizado consistente, seguro e musicalmente expressivo." }
 };
 
@@ -14,7 +14,7 @@ const sons = {
     "D4": new Audio("sons/D4.mp3"),
     "B4": new Audio("sons/B4.mp3"),
     "G4": new Audio("sons/G4.mp3"),
-    "E4": new Audio("sons/E4.mp3"),
+    "B3": new Audio("sons/B3.mp3"),
     "C3": new Audio("sons/C3.mp3")
 };
 
