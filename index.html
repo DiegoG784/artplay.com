@@ -1,4 +1,3 @@
-<!-- <!doctype html> Por algum motivo, o doctype não faz o carousel definir a propriedade de altura certa. Pesquisar a fundo sobre problema -->
 <html>
     <head>
         <meta charset="utf-8">
@@ -6,6 +5,7 @@
         <link rel="stylesheet" href="main.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="icon" href="img/logo_small.jpg">
         <title>Artplay</title>
     </head>
 
@@ -77,24 +77,20 @@
                 </div>
             </div>
             <div class="carousel-overlay"></div>
-            <!-- <a class="carousel-control-prev" type="button" href="#mainCarousel" role="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next" type="button" href="#mainCarousel" role="button" data-bs-target="#mainCarousel"  data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a> -->
         </div>
         <div style="height: 10px; background: linear-gradient(180deg,rgba(0, 0, 0, 0.281) 0%, rgba(255, 255, 255, 0) 100%);"></div>
 
         <div class="main-content mx-5">
             <div class="section my-3">
-                <h3>Mais do que uma escola, um espaço para expressão e descoberta</h3>
+                <h3 class="mobile-title">Mais do que uma escola, um espaço para expressão e descoberta</h3>
                 <div class="sub-section justify-content-center">
                     <div class="row w-100 justify-content-center">
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 d-flex align-items-center">
                             <img class="section-image rounded-4" src="img/index/1.JPG">
                         </div>
-                        <div class="col">
+                        <div class="col d-flex flex-column">
+                            <h3 class="desktop-title">Mais do que uma escola, um espaço para expressão e descoberta</h3>
+
                             <p class="my-2">
                                 No nosso espaço, acreditamos que a música é uma extensão para nossas vidas. Criamos um ambiente acolhedor e 
                                 inspirador onde crianças, jovens e adultos podem explorar sua criatividade, desenvolver habilidades e se conectar com 
@@ -114,21 +110,29 @@
             </div>
             
             <!-- Cursos -->
-            <div class="section my-3">
-                <h3>Nossos Cursos</h3>
+            <div class="section my-3 mb-4">
+                <h3 class="mobile-title">Nossos Cursos</h3>
                 <div class="sub-section justify-content-center">
                     <div class="row w-100 justify-content-center">
-                        <div class="col">
+                        <div class="col mb-2">
+                            <h3 class="desktop-title">Nossos Cursos</h3>
                             <p class="my-2">
-                                Nós oferecemos diversos instrumentos para diversos tipos de gostos, desde instrumentos de corda e até em canto profissional. Venha dar uma olhada!
+                                Nós ensinamos diversos tipos de instrumentos para diversos tipos de gostos, desde instrumentos de corda simples e até em canto profissional. 
+                                Além da base fundamental que oferecemos para os alunos para entender o conceito como a teoria musical, nós oferecemos diversas maneiras de
+                                ensinar ao nossos alunos da melhor maneira possível!
+                                <br>
+                                Além do mais, nós damos a oportunidade de uma aula gratuita ao aluno que estiver curioso em aprender um instrumento e querer saber como ele
+                                realmente funciona, o que é essencial para qualquer pessoa que gostaria de aprender coisas novas, porém não sabe por onde começar e como realmente vai funcionar.
+                                <br><br>
+                                Curioso em saber o que temos para você? Venha dar uma olhada!
                             </p>
                             <div class="w-100 d-flex justify-content-center">
                                 <a type="button" class="btn btn-primary me-4" href="cursos.html">Explorar Cursos</a>
                                 <a type="button" class="btn btn-primary" href="cursos.html#experimental-course">Aula Experimental</a>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <img class="section-image rounded-4 mt-3" src="img/index/2.JPG">
+                        <div class="col-sm-4 d-flex align-items-center">
+                            <img class="section-image rounded-4" src="img/index/2.JPG">
                         </div>
                     </div>
                 </div>
@@ -145,16 +149,20 @@
                     formada, saindo em vantagem como muitos profissionais e escolas ao redor!
                 </p>
                 <div class="section my-3">
-                    <h3>Aulas em Grupo</h3>
+                    <h3 class="mobile-title">Aulas em Grupo</h3>
                     <div class="sub-section justify-content-center">
                         <div class="row w-100 justify-content-center">
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 d-flex align-items-center">
                                 <img class="section-image rounded-4" src="img/index/3.JPG">
                             </div>
                             <div class="col">
+                                <h3 class="desktop-title">Aulas em Grupo</h3>
                                 <p class="my-2">
-                                    As aulas em grupo são realizada em grupos de alunos com os instrutores que irão determinar a aula que será passada. Os alunos praticam juntos, compartilham experiências e evoluem musicalmente
-                                    com apoio dos instrutores. Ideal para desenvolver ritmo, percepção e improvisação!
+                                    As aulas em grupo são realizadas em grupos de alunos com os instrutores que irão determinar a aula e a música que será passada. Os alunos praticam juntos, 
+                                    compartilham experiências e evoluem musicalmente com apoio dos instrutores. Ideal para desenvolver ritmo, percepção e improvisação!
+                                    <br>
+                                    Além disso, pode diminuir
+                                    a timidez e o medo que ficamos quando estamos com diversas pessoas em um mesmo lugar, além de formar novas amizades no meio disso!
                                 </p>
                             </div>
                         </div>
@@ -162,17 +170,21 @@
                 </div>
 
                 <div class="section my-3">
-                    <h3>Prática de Banda</h3>
+                    <h3 class="mobile-title">Prática de Banda</h3>
                     <div class="sub-section justify-content-center">
                         <div class="row w-100 justify-content-center">
                             <div class="col">
+                                <h3 class="desktop-title">Prática de Banda</h3>
                                 <p class="my-2">
                                     A prática de banda é uma das experiências mais empolgantes em nossa escola! Os alunos formam grupos 
                                     e ensaiam diversos repertórios musicais, como se estivessem em uma banda de verdade. É onde teoria vira prática, 
                                     e a música ganhará vida ao palco!
+                                    <br>
+                                    Com isso, você irá aprender a trabalhar em equipe e desenvolver diversos lados com essa metodologia, além de aprender
+                                    aquele medo que você fica quando você irá apresentar algo, o que é essencial para cada um de nós músicos!
                                 </p>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 d-flex align-items-center">
                                 <img class="section-image rounded-4" src="img/index/4.JPG">
                             </div>
                         </div>
@@ -186,23 +198,24 @@
         <div class="main-content mx-5">
 
             <!-- Sobre Nós -->
-            <div class="section my-3">
-                <h3>Sobre Nós</h3>
+            <div class="section my-4">
+                <h3 class="mobile-title">Sobre Nós</h3>
                 <div class="sub-section justify-content-center">
                     <div class="row w-100 justify-content-center">
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 d-flex justify-content-center">
                             <img class="section-image rounded-4" src="img/index/5.JPG">
                         </div>
                         <div class="col">
+                            <h3 class="desktop-title">Sobre Nós</h3>
                             <p class="my-2">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos temporibus, vero blanditiis ipsam hic cumque qui 
-                                aliquid asperiores quaerat? Aliquam ab cupiditate, atque earum veniam ipsum nostrum dolore laudantium. Lorem ipsum dolor sit 
-                                amet, consectetur adipisicing elit. Quos ratione aliquid molestias eos incidunt, reiciendis officia libero voluptatum natus 
-                                non earum delectus. Nam provident mollitia incidunt qui eligendi rerum deleniti!
+                                Somos diversos professores que possuímos um sonho em comum: compartilhar a felicidade e transferir a nossa sabedoria da música para
+                                todos que estão ao nosso redor. Nós gostariamos de formar novas amizades e parcerias que também possuem esse mesmo sonho que nós, além
+                                de dar oportunidades para aqueles que gostariam de entrar no mundo da música também. Se você gostaria de conversar com a gente não hesite, pois
+                                aqui você está em casa como nós.
                             </p>
                             <div class="d-flex flex-row justify-content-center">
                                 <a type="button" class="btn btn-primary me-4" href="contato.html">Nossos contatos</a>
-                                <a type="button" class="btn btn-primary" href="https://maps.app.goo.gl/96eyKLXY9RxWFteh9">Veja nossa localização</a>
+                                <a type="button" class="btn btn-primary" href="https://maps.app.goo.gl/96eyKLXY9RxWFteh9">Veja nossa localização <i class="bi bi-box-arrow-up-right" ></i></a>
                             </div>
                         </div>
                     </div>
