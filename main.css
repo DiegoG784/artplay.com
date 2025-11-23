@@ -82,18 +82,18 @@
 
 /* Cursos */
 
-.piano-course {
+/* .piano-course {
     border-top: 1px solid rgb(49, 49, 49);
     border-bottom: 1px solid rgb(49, 49, 49);
-}
+} */
 
 .white-note {
-    background-color: rgb(240, 240, 240);
+    /* background-color: rgb(240, 240, 240); */
     min-height: 128px;
 }
 
 .white-note-side {
-    background-color: rgb(240, 240, 240);
+    /* background-color: rgb(240, 240, 240); */
     min-height: 86px;
     display: flex;
     align-items: center;
@@ -106,12 +106,12 @@
 }
 
 .white-middle-note {
-    background-color: rgb(240, 240, 240);
+    /* background-color: rgb(240, 240, 240); */
     height: 70px;
 }
 
 .white-note-normal {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(255, 255, 255);
 }
 
 .black-note-normal {
@@ -119,6 +119,13 @@
 }
 
 .cursos-section {
+    background-color: #1291e6; /* preto */
+    color: #ffffff !important;
+    width: 100%;
+    padding: 40px;
+}
+
+.header-section {
     background-color: #1291e6; /* preto */
     color: #ffffff !important;
     width: 100%;
@@ -144,10 +151,10 @@
     width: 240px;
 }
 
-.maps-reviewers {
-    background-color:#1291e6;
-    margin-top: 50px;
-}
+/* .maps-reviewers { */
+    /* background-color:#1291e6; */
+    /* margin-top: 50px; */
+/* } */
 
 .note-divider-line {
     background-color:rgb(24, 24, 24);
