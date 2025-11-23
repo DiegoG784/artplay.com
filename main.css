@@ -53,6 +53,25 @@
     height: 360px;
 }
 
+@media (min-width: 600px) {
+    .mobile-title {
+        display: none;
+    }
+    .desktop-title {
+        display: flex;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .mobile-title {
+        display: flex;
+    }
+    .desktop-title {
+        display: none;
+    }
+}
+
 /* .nav-footer { */
     /* // height: 100px; */
 
@@ -72,7 +91,9 @@
 }
 
 .section-image {
+    /* width: 90%; */
     width: 100%;
+
 }
 
 .differential-section {
